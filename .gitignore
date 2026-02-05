@@ -1,0 +1,15 @@
+.env
+
+.idea/
+*.iws
+*.iml
+*.ipr
+
+/vendor/
+
+.DS_Store
+Thumbs.db
+
+*.log
+/temp/
+/cache/
