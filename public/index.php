@@ -3,14 +3,16 @@ use App\Core\Router;
 use Dotenv\Dotenv;
 
 session_start();
-require_once __DIR__ . '/../vendor/autoload.php';
 
+define('ROOT', dirname(__DIR__));
 
-$dotenv = Dotenv::createImmutable(__DIR__ . '/../');
+require_once ROOT . '/vendor/autoload.php';
+
+$dotenv = Dotenv::createImmutable(ROOT);
 $dotenv->load();
 
 $router = new Router();
 
-require_once __DIR__ . '/../routes/web.php';
+require_once ROOT . '/routes/web.php';
 
 $router->dispatch($_SERVER['REQUEST_URI'], $_SERVER['REQUEST_METHOD']);

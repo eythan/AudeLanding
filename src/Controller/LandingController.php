@@ -26,7 +26,7 @@ class LandingController extends Controller
         }
 
         $this->render('landing/index', [
-            'title' => 'Accueil',
+            'title' => 'Landing',
             'city'  => $cityData
         ]);
     }
