@@ -143,13 +143,3 @@
         </div>
     </div>
 </section>
-
-<section class="bg-white">
-    <h1><?= htmlspecialchars($city['id']) ?></h1>
-    <h1><?= htmlspecialchars($city['slug']) ?></h1>
-    <h1><?= htmlspecialchars($city['display_name']) ?></h1>
-    <h1><?= htmlspecialchars($city['zip_code']) ?></h1>
-    <h1><?= htmlspecialchars($city['description']) ?></h1>
-
-    <img src="/assets/images/cities/<?= htmlspecialchars($city['image']) ?>" />
-</section>
