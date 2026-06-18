@@ -9,7 +9,7 @@ define('ROOT', dirname(__DIR__));
 require_once ROOT . '/vendor/autoload.php';
 
 $dotenv = Dotenv::createImmutable(ROOT);
-$dotenv->load();
+$dotenv->safeLoad();
 
 $router = new Router();
 

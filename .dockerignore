@@ -1,0 +1,14 @@
+.git
+.gitignore
+.idea
+*.iml
+*.iws
+*.ipr
+vendor/
+.env
+*.log
+/temp/
+/cache/
+.DS_Store
+Thumbs.db
+audelanding.sql
